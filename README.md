@@ -6,7 +6,7 @@
 
 Nuance génère des palettes de couleurs harmonieuses en un appui sur Espace. On garde les couleurs qui plaisent, on relance le reste, puis on copie le résultat directement dans son CSS.
 
-🔗 **Démo :** [30daysprojects.netlify.app/day-01-palette-generator](https://30daysprojects.netlify.app/day-01-palette-generator/)
+🔗 **Démo :** [nuancecolor.netlify.app](https://nuancecolor.netlify.app/)
 
 ## Fonctionnalités
 
