@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Générateur · Nuance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app">
+  <header class="topbar">
+    <a href="index.html" class="logo"><span class="logo-dots"></span>Nuance</a>
+
+    <nav id="modes" class="modes" aria-label="Mode de palette"></nav>
+
+    <div class="actions">
+      <!-- Outils : en ligne sur grand écran, dans un menu déroulant sinon -->
+      <div id="menu" class="menu">
+        <button id="menu-toggle" class="btn btn-ghost menu-toggle" aria-expanded="false" aria-controls="toolbar">
+          <span aria-hidden="true">⋯</span> Outils
+        </button>
+        <div id="toolbar" class="toolbar">
+          <button id="add" class="btn btn-ghost" title="Ajouter une couleur">
+            <span class="ico" aria-hidden="true">+</span><span class="label-short">Couleur</span><span class="label-long">Ajouter une couleur</span>
+          </button>
+          <button id="share" class="btn btn-ghost" title="Copier un lien vers cette palette">
+            <span class="ico" aria-hidden="true">🔗</span><span class="label-short">Partager</span><span class="label-long">Copier le lien de partage</span>
+          </button>
+          <button id="image" class="btn btn-ghost" title="Télécharger la palette en PNG">
+            <span class="ico" aria-hidden="true">🖼️</span><span class="label-short">Image</span><span class="label-long">Télécharger en image</span>
+          </button>
+          <button id="export" class="btn btn-ghost" title="Copier les variables CSS">
+            <span class="ico" aria-hidden="true">{ }</span><span class="label-short">CSS</span><span class="label-long">Copier les variables CSS</span>
+          </button>
+        </div>
+      </div>
+      <button id="generate" class="btn btn-primary btn-generate"><span aria-hidden="true">↻</span> Générer</button>
+    </div>
+  </header>
+
+  <main id="palette" class="palette"></main>
+
+  <footer class="hint">
+    <kbd>Espace</kbd> pour générer · Clic pour copier · Glisser pour déplacer · Clic sur le nom pour le renommer · 🔒 garder · ✎ modifier · ✕ supprimer
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+
+  <script src="palette.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

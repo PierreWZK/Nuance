@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuance · Générateur de palettes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing">
+  <header class="nav container">
+    <a href="index.html" class="logo"><span class="logo-dots"></span>Nuance</a>
+    <a href="generator.html" class="btn btn-ghost">Ouvrir le générateur</a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <p class="eyebrow">Générateur de palettes de couleurs</p>
+    <h1>Des couleurs qui vont <em>ensemble</em>, en un appui sur Espace.</h1>
+    <p class="lead">
+      Nuance crée des palettes de cinq couleurs harmonieuses. Gardez celles que vous aimez,
+      relancez le reste, puis copiez le résultat directement dans votre CSS.
+    </p>
+    <div class="hero-actions">
+      <a href="generator.html" class="btn btn-primary btn-lg">Générer ma palette →</a>
+      <a href="#modes" class="btn btn-ghost btn-lg">Découvrir les modes</a>
+    </div>
+
+    <button id="hero-palette" class="hero-palette" aria-label="Changer la palette d'exemple"></button>
+    <p class="hero-caption">Mode <strong id="hero-mode">Aléatoire</strong> · cliquez sur la palette pour en voir une autre</p>
+  </section>
+
+  <!-- Couleur du jour -->
+  <section class="section container">
+    <div id="daily" class="daily">
+      <div class="daily-swatch">
+        <span id="daily-hex" class="daily-swatch-hex"></span>
+      </div>
+      <div class="daily-info">
+        <p class="eyebrow">Couleur du jour · <span id="daily-date"></span></p>
+        <h2 id="daily-name"></h2>
+        <p id="daily-hsl" class="daily-hsl"></p>
+        <div id="daily-shades" class="daily-shades" aria-label="Nuances de la couleur du jour"></div>
+        <p id="daily-desc" class="daily-desc"></p>
+        <p class="daily-text">Une nouvelle couleur chaque jour, la même pour tout le monde. Revenez demain pour découvrir la suivante.</p>
+        <div class="daily-actions">
+          <a id="daily-link" href="generator.html" class="btn btn-primary">Créer une palette avec →</a>
+          <button id="daily-copy" class="btn btn-ghost">Copier le code</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modes -->
+  <section id="modes" class="section container">
+    <h2>Cinq façons d'assortir vos couleurs</h2>
+    <p class="section-lead">Chaque mode suit une règle de la théorie des couleurs. Cliquez sur un mode pour l'essayer.</p>
+    <div id="mode-cards" class="mode-cards"></div>
+  </section>
+
+  <!-- Comment ça marche -->
+  <section class="section container">
+    <h2>Comment ça marche</h2>
+    <ol class="steps">
+      <li>
+        <span class="step-number">1</span>
+        <h3>Choisissez un mode</h3>
+        <p>Analogue pour de la douceur, complémentaire pour du contraste, monochrome pour la sobriété.</p>
+      </li>
+      <li>
+        <span class="step-number">2</span>
+        <h3>Appuyez sur Espace</h3>
+        <p>Une nouvelle palette à chaque appui. Les couleurs proches sont toujours rangées côte à côte.</p>
+      </li>
+      <li>
+        <span class="step-number">3</span>
+        <h3>Verrouillez et copiez</h3>
+        <p>Le cadenas garde une couleur. Un clic copie son code, un bouton exporte toute la palette en CSS.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Fonctionnalités -->
+  <section class="section container">
+    <h2>Tout ce qu'il faut, rien de plus</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🔒 Verrouillage</h3>
+        <p>Gardez les couleurs qui vous plaisent pendant que les autres changent.</p>
+      </div>
+      <div class="feature">
+        <h3>🌈 Tri par teinte</h3>
+        <p>Les verts restent avec les verts : la palette se lit naturellement.</p>
+      </div>
+      <div class="feature">
+        <h3>🏷️ Noms de couleurs</h3>
+        <p>Chaque couleur reçoit un nom (Corail, Bleu nuit…) que vous pouvez renommer.</p>
+      </div>
+      <div class="feature">
+        <h3>✎ Palette sur mesure</h3>
+        <p>Ajoutez, supprimez ou modifiez les couleurs, de 2 à 10 par palette.</p>
+      </div>
+      <div class="feature">
+        <h3>📋 Copie en un clic</h3>
+        <p>Cliquez sur une couleur pour copier son code hexadécimal.</p>
+      </div>
+      <div class="feature">
+        <h3>🎨 Export CSS</h3>
+        <p>Toute la palette en variables nommées (<code>--corail</code>, <code>--bleu-nuit</code>…), prête à coller.</p>
+      </div>
+      <div class="feature">
+        <h3>🖼️ Export image</h3>
+        <p>Téléchargez la palette en PNG, avec les noms et les codes.</p>
+      </div>
+      <div class="feature">
+        <h3>🔗 Partage par lien</h3>
+        <p>Les couleurs sont dans l'adresse : envoyez le lien, on voit la même palette.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action final -->
+  <section class="cta container">
+    <div id="cta-band" class="cta-band"></div>
+    <h2 id="cta-title" class="cta-title">Votre prochaine palette est à un clic.</h2>
+    <p class="cta-hint">Passez la souris sur les lettres.</p>
+    <a href="generator.html" class="btn btn-primary btn-lg">Générer ma palette →</a>
+  </section>
+
+  <footer class="footer container">
+    <span>Nuance · Jour 01 du défi 30 jours, 30 projets</span>
+    <span>Fait en HTML, CSS et JavaScript</span>
+  </footer>
+
+  <script src="palette.js"></script>
+  <script src="landing.js"></script>
+</body>
+</html>
