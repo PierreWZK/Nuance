@@ -8,6 +8,8 @@ Nuance génère des palettes de couleurs harmonieuses en un appui sur Espace. On
 
 🔗 **Démo :** [nuance.projectp.fr](https://nuance.projectp.fr/)
 
+📄 Ce qui a été construit, règle par règle : le [cahier des charges](CAHIER_DES_CHARGES.md).
+
 ## Fonctionnalités
 
 **Générer**
