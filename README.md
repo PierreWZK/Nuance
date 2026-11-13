@@ -1,12 +1,15 @@
 # Nuance · Générateur de palettes
 
-> Jour 01 du défi **30 jours, 30 projets** · HTML, CSS et JavaScript, sans bibliothèque
+🌐 **[nuance.projectp.fr](https://nuance.projectp.fr/)** · Jour 01 du défi **[30 jours, 30 projets](https://projectp.fr/)** · [Dépôt du défi](https://github.com/PierreWZK/30DaysProjects)
 
-![Page d'accueil de Nuance](docs/preview.png)
+**Nuance** génère des palettes de couleurs harmonieuses en un appui sur Espace. On garde les couleurs qui plaisent, on relance le reste, puis on copie le résultat directement dans son CSS. HTML, CSS et JavaScript, sans bibliothèque.
 
-Nuance génère des palettes de couleurs harmonieuses en un appui sur Espace. On garde les couleurs qui plaisent, on relance le reste, puis on copie le résultat directement dans son CSS.
+[![Page d'accueil de Nuance : la couleur du jour et les modes d'harmonie](docs/preview.png)](https://nuance.projectp.fr/)
 
-🔗 **Démo :** [nuance.projectp.fr](https://nuance.projectp.fr/)
+<p align="center">
+  <img src="docs/preview-generateur.png" alt="Le générateur : cinq bandes de couleur avec leur nom, leur code hexadécimal et HSL" width="72%">
+  <img src="docs/preview-mobile.png" alt="Le générateur sur téléphone, bouton Générer en bas de l'écran" width="25%">
+</p>
 
 📄 Ce qui a été construit, règle par règle : le [cahier des charges](CAHIER_DES_CHARGES.md).
 
@@ -59,3 +62,13 @@ La copie dans le presse-papier peut être bloquée quand la page est ouverte dir
 ## Technologies
 
 HTML, CSS et JavaScript, sans bibliothèque ni étape de construction. Seules les polices viennent de Google Fonts (Bricolage Grotesque et Inter).
+
+---
+
+## Le défi 30 jours, 30 projets
+
+Un projet complet par jour pendant 30 jours, chacun en ligne sur son propre sous-domaine.
+
+- 🗂️ **Tous les projets** : [projectp.fr](https://projectp.fr/)
+- 💻 **Le dépôt du défi** : [github.com/PierreWZK/30DaysProjects](https://github.com/PierreWZK/30DaysProjects)
+- ➡️ **Jour suivant** : [Écho, jeux de mémoire musicaux](https://echo.projectp.fr/)
